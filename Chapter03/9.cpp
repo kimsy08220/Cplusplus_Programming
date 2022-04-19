@@ -24,7 +24,7 @@ Oval::Oval(int w, int h) {
 }
 
 Oval::~Oval() {
-	cout << "Oval �Ҹ� : width = " << width << ", height = " << height << endl;
+	cout << "Oval ¼Ò¸ê : width = " << width << ", height = " << height << endl;
 }
 
 int Oval::getWidth() {
@@ -46,7 +46,7 @@ void Oval::show() {
 
 int main(void)
 {
-	Oval a, b(3,4);
+	Oval a, b(2,4);
 	a.set(10,20);
 	a.show();
 	cout << b.getWidth() << "," << b.getHeight() << endl;
