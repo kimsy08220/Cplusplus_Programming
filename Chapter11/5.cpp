@@ -4,12 +4,11 @@ using namespace std;
 
 int main(void) {
 	string cmd;
-
 	while (true) {
-		cout << "Á¾·áÇÏ·Á¸é exitÀ» ÀÔ·ÂÇÏ¼¼¿ä >> ";
+		cout << "ì¢…ë£Œí•˜ë ¤ë©´ exitì„ ìž…ë ¥í•˜ì„¸ìš” >> ";
 		getline(cin, cmd);
 		if (cmd == "exit") {
-			cout << "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù...." << endl;
+			cout << "í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤...." << endl;
 			return 0;
 		}
 	}
