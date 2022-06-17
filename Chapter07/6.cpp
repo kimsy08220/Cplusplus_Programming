@@ -65,26 +65,22 @@ public:
 	friend Matrix operator+=(Matrix &a, Matrix b);
 	friend bool operator==(Matrix a, Matrix c);
 };
-
 Matrix operator+(Matrix a, Matrix b) {
 	Matrix c;
 	for (int i = 0; i < 4; i++)
 		c.num[i] = a.num[i] + b.num[i];
 	return c;
 }
-
 //void operator+=(Matrix& a, Matrix b) {
 //	for (int i = 0; i < 4; i++) {
 //		a.num[i] += b.num[i];
 //	}
 //}
-
 Matrix operator+=(Matrix& a, Matrix b) {
 	for (int i = 0; i < 4; i++)
 		a.num[i] += b.num[i];
 	return a;
 }
-
 bool operator==(Matrix a, Matrix c) {
 	for (int i = 0; i < 4; i++) {
 		if (a.num[i] == c.num[i]);
@@ -92,7 +88,6 @@ bool operator==(Matrix a, Matrix c) {
 	}
 	return true;
 }
-
 int main(void) {
 	Matrix a(1, 2, 3, 4), b(2, 3, 4, 5), c;
 	c = a + b;
